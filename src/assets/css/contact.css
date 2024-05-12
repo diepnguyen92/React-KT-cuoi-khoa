@@ -1,0 +1,53 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.content:hover {border: unset;}
+.menu-active {border-bottom:2px solid rgba(0, 0, 0, 0.2)}
+
+.infor-map {display: flex;}
+.map {width: 70%;}
+
+.infor {width: 30%;
+height: 600px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+padding: 10px 10px;
+margin-right: 20px;
+}
+h2 {color:#F172A1 ;}
+.infor form input {max-width: 100%;
+width: 100%;
+margin-top: 15px;
+padding: 10px;
+border-radius: 5px;
+outline: none;
+border: 1px solid rgba(0, 0, 0, 0.2);}
+.content-infor {height: 200px;
+position: relative;
+line-height: 40px;
+}
+textarea {margin-top: 15px;
+width: 100%;
+outline: none;
+border: 1px solid rgba(0, 0, 0, 0.2);
+padding-left: 10px;
+}
+
+.sent {display: flex;
+    justify-content: center;
+}
+
+.infor form button {margin: auto;
+background-color: #F172A1;
+color: white;
+padding: 5px 40px;
+border-radius: 20px;
+margin-top: 15px;
+border: 1px solid #F172A1;}
+.baner {background-color: aqua;
+width: 100%;
+height: auto;
+margin-bottom: 30px;}
+.baner img {max-width: 100%;
+object-fit: cover;
+}
