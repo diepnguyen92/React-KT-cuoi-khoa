@@ -13,13 +13,13 @@ const Home = () => {
   const data = Useapi(
     "https://663c9efa17145c4d8c36fc5a.mockapi.io/Hoatuoi"
   ).data;
-  console.log(data);
+  // console.log(data);
   const dataHs = filterCategory(data, "Hoa Sap")
   const dataHsn = filterCategory(data, "Hoa Gio")
   const dataHkt = filterCategory(data,"Hoa bo")
   const dataHl = filterCategory(data,"Lang hoa")
   
-
+  
   return (
     <>
       <Header  />

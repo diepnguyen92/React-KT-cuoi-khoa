@@ -11,7 +11,7 @@ const Hoatuoi = () => {
 
   const dataHt = filterCategory(data, "Hoa tuoi");
 
-  console.log(renderData(dataHt));
+  // console.log(renderData(dataHt));
   return (
     <>
       <div className="product-sp">
