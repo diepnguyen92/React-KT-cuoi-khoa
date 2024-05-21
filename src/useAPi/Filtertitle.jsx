@@ -33,4 +33,10 @@ export const renderData = (listData)=>{
       </div>
     </div>
   </div>)
-  })}
+  })};
+export  const getDataProduct = (list,value)=>{
+  return list.filter((item)=>{
+      // console.log(item.title);
+  return    item.title===value
+  })
+};

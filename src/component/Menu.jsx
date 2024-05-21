@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
     <>
-     <div className="menu-main menu-total">
+      <div className="menu-main menu-total">
         <div className="container">
           {/* mobile-menu */}
           <div>
-            <div className="container1" >
+            <div className="container1">
               <div className="bar1" />
               <div className="bar2" />
               <div className="bar3" />
@@ -16,27 +16,32 @@ const Menu = () => {
             <div className="menu">
               <ul>
                 <li>
-                  <Link to ="/">Trang chủ</Link>
+                  <Link to="/">Trang chủ</Link>
                 </li>
                 <li className="menu-main">
                   Sản phẩm
                   <div className="menu-2">
                     <ul>
-                      <li data-category="Hoa tuoi">Hoa tươi</li>
-                      <li data-category="Hoa Sap">Hoa sáp</li>
-                      <li data-category="Hoa bo">Hoa Bó</li>
-                      <li data-category="Hoa Gio">Giỏ hoa</li>
-                      <li data-category="Lang hoa">Lẵng hoa</li>
+                    <Link to={"/hoatuoi"}> <li data-category="Hoa tuoi">
+                        Hoa tươi
+                      </li></Link>
+                      <Link to = {"/hoabo"}><li data-category="Hoa Sap">Hoa bó</li></Link>
+                      <Link to = {'/hoasap'}> <li data-category="Hoa bo">Hoa sáp</li></Link>
+                     
+                      <Link to = {'/giohoa'}><li data-category="Hoa Gio">Giỏ hoa</li></Link>
+                     
+                      <Link to = {'/langhoa'}><li data-category="Lang hoa">Lẵng hoa</li></Link>
+                      
                     </ul>
                   </div>
                 </li>
-              <Link to ="./suport.html">
+                <Link to="./suport.html">
                   <li>Hướng dẫn mua hàng</li>
                 </Link>
-              <Link to ="./contact.html">
+                <Link to="./contact.html">
                   <li>Liên hệ</li>
                 </Link>
-              <Link to ="./detail1.html">
+                <Link to="./detail1.html">
                   <li>Ý nghĩa hoa</li>
                 </Link>
               </ul>
@@ -47,7 +52,7 @@ const Menu = () => {
           <div className="mobile-top-hearder">
             <div className="container">
               <div className="mobile-logo">
-              <Link to ="./index.html">
+                <Link to="./index.html">
                   <img src="./Linkssets/image/logo.png" alt="logo" />
                 </Link>
               </div>
@@ -63,9 +68,8 @@ const Menu = () => {
           </div>
         </div>
       </div>
-    
     </>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

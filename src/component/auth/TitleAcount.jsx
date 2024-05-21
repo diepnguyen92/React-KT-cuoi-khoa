@@ -1,6 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 const TitleAcount = () => {
+  const navigate = useNavigate()
+  const handleLogout =()=>{
+   
+    localStorage.clear()
+    navigate('/account')
+    // alert("123")
+  }
   return (
     <>
      <div className='title-acount'>
@@ -9,7 +16,7 @@ const TitleAcount = () => {
                 <li><Link to={'/myacount'}> Thông tin tài khoản</Link></li>
                 <li><Link to = {'/myacount/changepassword'}>Đổi mật khẩu</Link></li>
                 <li>Xem lại đơn hàng</li>
-                <li>Đăng xuất</li>
+                <li onClick={handleLogout}>Đăng xuất</li>
             </ul>
         </div>
     </>
