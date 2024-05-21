@@ -8,23 +8,24 @@ import Listingproduct from "../component/Listingproduct";
 import Useapi from "../useAPi/Useapi";
 import Hoatuoi from "../component/Products/Hoatuoi";
 import { filterCategory,renderData } from "../useAPi/Filtertitle";
+import { URL_API } from "../useAPi/url";
 
 const Home = () => {
-  const data = Useapi(
-    "https://663c9efa17145c4d8c36fc5a.mockapi.io/Hoatuoi"
-  ).data;
+  const { data, isLoading } = Useapi(URL_API);
+
   // console.log(data);
+  if (isLoading) return <h1>Đang tải dữ liệu....</h1>;
+  // console.log(data);
+
+ 
   const dataHs = filterCategory(data, "Hoa Sap")
   const dataHsn = filterCategory(data, "Hoa Gio")
   const dataHkt = filterCategory(data,"Hoa bo")
   const dataHl = filterCategory(data,"Lang hoa")
-  
+  const dataHt = filterCategory(data, "Hoa tuoi");
   
   return (
     <>
-      <Header  />
-      {/* menu desktop*/}
-     <Menu  />
       <div id="categoryContent">
         {/* baner slie */}
         <Baner  />
@@ -53,7 +54,11 @@ const Home = () => {
             tươi
           </h3>
         </div>
-        <Hoatuoi />
+        <div className="product-sp">
+        <div className="container">
+          <div className="row row-js-hs">{renderData(dataHt)}</div>
+        </div>
+      </div>
         {/* product 2 */}
         <div className="title-product">
           <h3>
@@ -118,9 +123,7 @@ const Home = () => {
         </div>
       </div>
       {/* ƯU ĐIỂM NỔI BẬT */}
-    <Advantage  />
-    {/* botton-footter */}
-    <Footer  />
+
     </>
   );
 };

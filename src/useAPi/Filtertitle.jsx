@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export const filterCategory =(item,value)=>{
   return item.filter((list) => list.title === value);
 }
@@ -14,9 +15,9 @@ export const renderData = (listData)=>{
   return (
     <div className="col-12 col-sm-6 col-md-3" key={item.id}>
     <div className="content">
-      <a href="./defaut1.html?id=${item.id}" target="_blank">
+      <Link to={`/products/${item.id}`} target="_blank">
         <img className="image" src={item.image} alt={item.name} />
-      </a>
+      </Link>
       <div className="content2">
         <div className="name-price">
           <div className="name">

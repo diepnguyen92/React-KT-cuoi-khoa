@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assets/image/logo.png'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -19,9 +20,9 @@ const Header = () => {
               <div className="cart-total">TỔNG TIỀN</div>
               <span className="total-price">0 VND</span>
             </div>
-            <a href="./pay.html">
+            <Link to="./pay.html">
               <button className="purchase-btn">Thanh toán</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -30,9 +31,9 @@ const Header = () => {
         <div className="container">
           <div className="wrap-hearder">
             <div className="logo">
-              <a href="./index.html">
+              <Link to="/">
                 <img src={Logo} alt="logo" />
-              </a>
+              </Link>
             </div>
             <div className="searcher">
               <input
@@ -45,9 +46,9 @@ const Header = () => {
             </div>
             <div className="acount-bag">
               <div className="acount">
-                <a href="./myacount.html">
+                <Link to="/account">
                   <i className="fa-solid fa-user" />
-                </a>
+                </Link>
               </div>
               <div className="bag-main">
                 <div className="bag">

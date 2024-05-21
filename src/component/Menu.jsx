@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
   return (
@@ -15,7 +16,7 @@ const Menu = () => {
             <div className="menu">
               <ul>
                 <li>
-                  <a href="./index.html">Trang chủ</a>
+                  <Link to ="/">Trang chủ</Link>
                 </li>
                 <li className="menu-main">
                   Sản phẩm
@@ -29,15 +30,15 @@ const Menu = () => {
                     </ul>
                   </div>
                 </li>
-                <a href="./suport.html">
+              <Link to ="./suport.html">
                   <li>Hướng dẫn mua hàng</li>
-                </a>
-                <a href="./contact.html">
+                </Link>
+              <Link to ="./contact.html">
                   <li>Liên hệ</li>
-                </a>
-                <a href="./detail1.html">
+                </Link>
+              <Link to ="./detail1.html">
                   <li>Ý nghĩa hoa</li>
-                </a>
+                </Link>
               </ul>
               <div className="hotline">Hotline đặt hoa : 19000 8888</div>
             </div>
@@ -46,9 +47,9 @@ const Menu = () => {
           <div className="mobile-top-hearder">
             <div className="container">
               <div className="mobile-logo">
-                <a href="./index.html">
-                  <img src="./assets/image/logo.png" alt="logo" />
-                </a>
+              <Link to ="./index.html">
+                  <img src="./Linkssets/image/logo.png" alt="logo" />
+                </Link>
               </div>
               <div className="acount-bag">
                 <div className="bag-main">

@@ -12,10 +12,11 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+import { URL_API } from "../useAPi/url";
 
 export default function App() {
   const data = Useapi(
-    "https://663c9efa17145c4d8c36fc5a.mockapi.io/Hoatuoi"
+    URL_API
   ).data;
 
   const dataHot = Filtertitle(data, "hot");
