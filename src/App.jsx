@@ -12,6 +12,11 @@ import Hoabo from "./pages/Page tittle product/Hoabo";
 import Hoasap from "./pages/Page tittle product/Hoasap";
 import Giohoa from "./pages/Page tittle product/Giohoa";
 import Langhoa from "./pages/Page tittle product/Langhoa";
+import Support from "./pages/Support";
+import Pay from "./pages/Pay";
+import Contact from "./pages/Contact";
+import Meaning from "./pages/home/Meaning";
+import Blog from "./pages/home/Blog";
 
 
 const App = () => {
@@ -20,6 +25,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/support" element ={<Support  />}  />
+          <Route path="/pay" element={<Pay  />} />
+          <Route path="/contact" element = {<Contact  />}  />
+          <Route path="/y nghia hoa" element={<Meaning  />}  />
+          <Route path="/blog" element = {<Blog  />}  />
           <Route path="/hoatuoi" element={<Hoatuoifl />}  />
           <Route path="/hoabo" element = {<Hoabo />} />
           <Route path="/hoasap" element = {<Hoasap />} />

@@ -1,15 +1,15 @@
 import React from 'react'
 import Useapi from '../../useAPi/Useapi'
 import { URL_API } from '../../useAPi/url'
-import { getDataProduct, renderData } from '../../useAPi/Filtertitle'
-
+import { getDataProduct} from '../../useAPi/Filtertitle'
+import renderData from '../../useAPi/renderData'
 
 const Hoasap = () => {
    
     const {data,isLoading} = Useapi(URL_API)
    
     if(isLoading) return <h1>Đang lấy dữ liệu....</h1>
-   console.log(data);
+  //  console.log(data);
   
     const dataProduct = getDataProduct(data, "Hoa Sap")
     // console.log(dataProduct);

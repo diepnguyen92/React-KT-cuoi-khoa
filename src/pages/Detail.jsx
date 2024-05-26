@@ -8,7 +8,7 @@ import DetailProduct from "../component/detail/DetailProduct";
 
 const Detail = () => {
     const dataMain = Useapi(URL_API).data;
-    console.log(dataMain);
+    
   const idProduct = useParams();
   const urlProduct = URL_API + `/${idProduct.id}`;
   const { data, isLoading } = Useapi(urlProduct);

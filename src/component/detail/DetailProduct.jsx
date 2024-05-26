@@ -1,7 +1,7 @@
 import React from "react";
-import { renderData } from "../../useAPi/Filtertitle";
-import Useapi from "../../useAPi/Useapi";
-import { URL_API } from "../../useAPi/url";
+import renderData from "../../useAPi/renderData";
+
+
 
 const DetailProduct = ({dataDetail}) => {
  

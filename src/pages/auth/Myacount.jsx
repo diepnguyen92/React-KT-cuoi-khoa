@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../assets/css/myacount.css"
-import { Link } from 'react-router-dom'
+
 import TitleAcount from '../../component/auth/TitleAcount'
 const Myacount = () => {
   return (

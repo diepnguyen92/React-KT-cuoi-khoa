@@ -2,14 +2,13 @@
 padding: 0;
 box-sizing: border-box;}
 
-.content:hover {border: unset;}
+
 .menu-active {border-bottom:2px solid rgba(0, 0, 0, 0.2)}
 
 .infor-map {display: flex;}
 .map {width: 70%;}
 
 .infor {width: 30%;
-height: 600px;
 border: 1px solid rgba(0, 0, 0, 0.2);
 padding: 10px 10px;
 margin-right: 20px;
@@ -50,4 +49,7 @@ height: auto;
 margin-bottom: 30px;}
 .baner img {max-width: 100%;
 object-fit: cover;
+}
+.support {
+    border: unset;
 }

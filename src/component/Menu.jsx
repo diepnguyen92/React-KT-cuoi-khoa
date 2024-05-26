@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Menu = () => {
+  
+  // console.log(data);
   return (
     <>
       <div className="menu-main menu-total">
@@ -25,23 +28,23 @@ const Menu = () => {
                     <Link to={"/hoatuoi"}> <li data-category="Hoa tuoi">
                         Hoa tươi
                       </li></Link>
-                      <Link to = {"/hoabo"}><li data-category="Hoa Sap">Hoa bó</li></Link>
-                      <Link to = {'/hoasap'}> <li data-category="Hoa bo">Hoa sáp</li></Link>
+                      <Link to = {"/hoabo"}><li >Hoa bó</li></Link>
+                      <Link to = {'/hoasap'}> <li >Hoa sáp</li></Link>
                      
-                      <Link to = {'/giohoa'}><li data-category="Hoa Gio">Giỏ hoa</li></Link>
+                      <Link to = {'/giohoa'}><li >Giỏ hoa</li></Link>
                      
-                      <Link to = {'/langhoa'}><li data-category="Lang hoa">Lẵng hoa</li></Link>
+                      <Link to = {'/langhoa'}><li > Lẵng hoa</li></Link>
                       
                     </ul>
                   </div>
                 </li>
-                <Link to="./suport.html">
+                <Link to="./support">
                   <li>Hướng dẫn mua hàng</li>
                 </Link>
-                <Link to="./contact.html">
+                <Link to="/contact">
                   <li>Liên hệ</li>
                 </Link>
-                <Link to="./detail1.html">
+                <Link to="/y nghia hoa">
                   <li>Ý nghĩa hoa</li>
                 </Link>
               </ul>

@@ -1,6 +1,11 @@
 import React from 'react'
 import advantage from '../assets/image/ưu điểm.jpg'
 const Advantage = () => {
+  const backToTop = ()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'});
+  }
   return (
     <>
       <div className="advantage">
@@ -11,7 +16,7 @@ const Advantage = () => {
           </div>
         </div>
       </div>
-      <div id="back-to-top">
+      <div id="back-to-top" onClick={backToTop}>
         <i className="fa-solid fa-chevron-up" style={{ color: "#ffffff" }} />
       </div>
     </>

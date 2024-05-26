@@ -1,7 +1,8 @@
 import React from 'react'
 import Useapi from '../../useAPi/Useapi'
 import { URL_API } from '../../useAPi/url'
-import { getDataProduct, renderData } from '../../useAPi/Filtertitle'
+import { getDataProduct } from '../../useAPi/Filtertitle'
+import renderData from '../../useAPi/renderData'
 
 const Hoatuoifl = () => {
    

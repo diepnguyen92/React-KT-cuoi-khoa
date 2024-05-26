@@ -12,12 +12,19 @@ import "../src/lib/bootstrap/css/bootstrap.min.css"
 import "../src/lib/owlcarousel/assets/owl.carousel.min.css"
 import "../src/lib/owlcarousel/assets/owl.theme.default.min.css"
 import "./assets/css/style.css"
+import { CartProvider } from './useAPi/Cart.jsx'
+
+
 
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  
   <React.StrictMode>
+    <CartProvider>
     <App />
+    </CartProvider>
   </React.StrictMode>,
+  
 )

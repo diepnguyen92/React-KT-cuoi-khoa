@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Footer = () => {
+  const [chatOpen, setchatOpen] = useState(false)
+  const handleClick = (event)=>{
+    if (event.target.closest('.mesenger-main')) {
+      return;
+    }
+    setchatOpen (!chatOpen)
+   
+  }
+  const closeChat = () => {
+    setchatOpen(false);
+  }
+  const stopPropagation = (event) => {
+    event.stopPropagation();
+  }
   return (
     <>
       
@@ -77,11 +91,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mesenger">
+      <div className="mesenger" onClick={handleClick}>
         CHAT
-        <div className="mesenger-main">
+        <div className={`mesenger-main ${chatOpen ?'active':''}`} onClick={stopPropagation}>
           <div className="mesenger-header">
-            <button className="close-ms">
+            <button className="close-ms" onClick={closeChat}>
               <i className="fa-solid fa-xmark" />
             </button>
             Chào mừng đã đến với MoonFlower
